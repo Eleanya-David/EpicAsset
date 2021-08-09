@@ -1,2 +1,1 @@
-# epicasset
-Investment site
+# epicasset is an internation private equity firm for business transactions. if used by another server: IP address will be tracked and the receiving client will be sued

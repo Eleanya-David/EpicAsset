@@ -1,0 +1,298 @@
+body{
+    font-family: monospace ;  
+    box-sizing: border-box ;
+}
+
+.container_main{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #00BBEC;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 999;
+    right: 0;
+    left: 0;
+    background-color: #ccc;
+    box-shadow: 4px 7px 20px darkgray;
+    transition: all 4s ease-in ;
+}
+
+.nav2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #00BBEC;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 999;
+    right: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.692);
+}
+
+.nav_left{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav_left h1{
+    font-size: 22px;
+    font-family:cursive;
+}
+.nav_left img{
+    width: 84px;
+}
+.nav_right{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.nav_right li{
+    display: inline;
+}
+.nav_right a{
+     color: darkgray !important;
+     text-decoration: none !important;
+     font-size: 18px !important;
+}
+.nav_right a:hover{
+    border-bottom: 2px solid #00BBEC !important;
+    padding-bottom: 10px !important;
+}
+.nav_right-superior-links{
+    margin-right: 10px;
+}
+
+.translate_header{
+    color: rebeccapurple;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.intro{
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.692),rgba(1, 146, 224, 0.329)), url(../images/company.jfif);
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    height: 475px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 3px solid rgba(150, 99, 201, 0.582);
+}
+.intro_headers{
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    margin-top: 100px !important;
+}
+.intro_headers button{
+    padding: 15px 40px;
+    font-family: monospace;
+    color: rebeccapurple;
+    border-color: white;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.intro_headers h1{
+    margin: 9.7px;
+    font-size: 60.8 !important;
+}
+
+.about_intro{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.about_head{
+    color:#663D99;
+    font-size:16.7px;
+}
+.about_hr{
+    border-color: #00BBEC;
+    max-width:130px;
+    width:130px;
+}
+.about_text{
+    /* background-color: rgba(245, 245, 245, 0.801); */
+    border-radius: 5px;
+    color: #00BBEC;
+}
+.about_text p{
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+.invest_intro{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.invest_intro-header{
+    color: rebeccapurple;
+    text-align: center;
+}
+.plan_1,
+.plan_2,
+.plan_3{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.plan_general{
+    background-color: whitesmoke;
+    box-shadow: 3px 6px 19px black;
+    width: 290px;
+    max-width: 100%;
+    padding: 3px;
+    /* height: 300px; */
+    /* max-height: 29vh; */
+}
+.plan_general h2{
+    text-align: center;
+    font-size: 14.5px;
+    color: rebeccapurple;
+    /* border: 1px solid black; */
+}
+.plan_general p{
+    text-align: center;
+    font-size: 14.2px;
+}
+
+.login_intro{
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.692),rgba(1, 146, 224, 0.329)),url(../images/company3.jfif);
+    background-position:top;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid rebeccapurple;
+}
+
+.login_intro-left{
+    color: rebeccapurple;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.login_intro-right{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.login_intro-right button{
+    padding: 15px 40px;
+    font-family: monospace;
+    color: rebeccapurple;
+    border-color: white;
+    background-color: white;
+    border-radius: 2px;
+}
+.login_first-button{
+    margin-bottom: 6px;
+}
+
+
+.counter
+{
+    background-color: #eaecf0;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.employees,.customer,.design,.order
+{
+    /* margin-top: 70px; */
+    /* margin-bottom: 70px; */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.counter-count
+{
+    font-size: 25.8px;
+    background-color: #00b3e7;
+    border-radius: 50%;
+    /* position: inline; */
+    /* display: flex; */
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.employee-p,.customer-p,.order-p,.design-p
+{
+    font-size: 24px;
+    color: #000000;
+    line-height: 34px;
+}
+
+.row span{
+    font-size: 25px;
+}
+
+.contact_intro{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #00BBEC;
+}
+.contact_intro-bottom{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact_intro img{
+    width: 64px;
+}
+.contact_intro-top h3{
+    font-size: 12px;  
+}
+.container,
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
